@@ -1,11 +1,11 @@
-Apuntes Ruby on Rails
+-- Apuntes Ruby on Rails
 
-VideoTutorial CesarCancino --> http://www.youtube.com/watch?v=sYIbuW7jPlE
-segundo paso en railsinstaller --> http://railsinstaller.org/windows
+/VideoTutorial CesarCancino --> http://www.youtube.com/watch?v=sYIbuW7jPlE
+/segundo paso en railsinstaller --> http://railsinstaller.org/windows
 
 Descarga de paquete con todas las configuraciones de ROR para windows railsinstaller.org
 
-Comando basicos
+-- Comando basicos
 Rails new name_project
 rails generate(g) controller name_controller  name_view  //Debe estar dentro del directorio ingresando con cd en el promt
 rails s // corre el servidor para ver la aplicacion corriendo en localhost:3000/name_installer/name_view
