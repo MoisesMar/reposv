@@ -15,3 +15,8 @@ $ rake db:migrate  //Para migrar todo lo referente a la creacion de la base de d
 
 
 $ rails generate scaffold Post name:string title:string content:text
+
+--Haciendo una prueba con el edito de unix NANO
+
+
+
