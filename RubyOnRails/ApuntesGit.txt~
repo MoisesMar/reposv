@@ -1,9 +1,6 @@
 Comandos Git
 git --global http.sslVerify false // esta configuracion global con el fin de hacer push a el repo remoto, ya que molestaba por la autenticacion
 
-git init //To configure a directory that will be used with git
-git add {".","-u"} -- When there are changes first is necesary add the changes, after to make commit
-			       -- The options: the dot is used to add all files modified. and the "-u" is used to update files deleted
 
 git commit -m "mensaje"//sincroniza los cambio el -m es para agregar un mensaje ""
 git log // permite ver el historial
@@ -13,8 +10,6 @@ git remote add origin git@github.com:<username>/demo_app.git //Agregar repo remo
 git push -u origin master //actualizar archivos en el repo remoto
 git remote // muestra los repositorios remotos que estan agregados. 
 git remote -v  //Con la opcion -v permite ver la url
-git pull //Actualiza los cambios que hay en el repositorio
-git <command> --help // this can deploy information about the command specified
 
 
 
