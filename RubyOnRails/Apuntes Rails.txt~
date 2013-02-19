@@ -1,0 +1,17 @@
+Apuntes Ruby on Rails
+
+VideoTutorial CesarCancino --> http://www.youtube.com/watch?v=sYIbuW7jPlE
+segundo paso en railsinstaller --> http://railsinstaller.org/windows
+
+Descarga de paquete con todas las configuraciones de ROR para windows railsinstaller.org
+
+Comando basicos
+Rails new name_project
+rails generate(g) controller name_controller  name_view  //Debe estar dentro del directorio ingresando con cd en el promt
+rails s // corre el servidor para ver la aplicacion corriendo en localhost:3000/name_installer/name_view
+
+$ rails generate scaffold Post name:string title:string content:text   // crea un MVC con lo basico borrar, editar, ver, nuevo
+$ rake db:migrate  //Para migrar todo lo referente a la creacion de la base de datos en rails
+
+
+$ rails generate scaffold Post name:string title:string content:text
