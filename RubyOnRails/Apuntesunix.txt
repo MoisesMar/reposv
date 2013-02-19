@@ -1,0 +1,10 @@
+﻿Apuntes comandos Unix
+
+rm -rf // rm es para eliminar archivos, la bandera -rf es para eliminar todos los archivos recursivamente dentro de un dir
+
+Que paso con los cambios.
+/W: Se trata de traer un pequeños cambios desde lo remoto a lo local
+
+/R: ahora trato de mandar la modificacion desde la maquina local a repo de github :-)
+
+/W: que buena ome!!!
