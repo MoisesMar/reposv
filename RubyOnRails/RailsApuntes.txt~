@@ -16,7 +16,7 @@ $ rake db:migrate  //Para migrar todo lo referente a la creacion de la base de d
 
 $ rails generate scaffold Post name:string title:string content:text
 
-***********************************
+
  -- Operaciones con la base de datos
 
 - bundle exec rake db:migrate // migra los datos a la base de datos
@@ -25,9 +25,6 @@ $ rails generate scaffold Post name:string title:string content:text
 -- Crecion de un nuevo projecto, excluyendo el framework de testeo
  rails new NameProjec --skip-unit-test
 
-
-
-*********************************
 -- Volviendo a un estado anterior
 	$ rails generate controller FooBars baz quux // Crea un controlador FooBars con metodos baz y quux
 	$ rails destroy  controller FooBars baz quux// Elimina el controlador FooBars igual que sus metodos
