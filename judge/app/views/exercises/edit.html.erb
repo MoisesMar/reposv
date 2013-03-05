@@ -1,6 +1,6 @@
 <%- model_class = Exercise -%>
 <div class="page-header">
-  <h2><%=t '.title', :default => t('helpers.titles.edit', :model => model_class.model_name.human,
-                                   :default => "Edit #{model_class.model_name.human}") %></h2>
+  <h4><%=t '.title', :default => t('helpers.titles.edit', :model => model_class.model_name.human,
+                                   :default => "Edit #{model_class.model_name.human}") %></h4>
 </div>
 <%= render :partial => 'form' %>
