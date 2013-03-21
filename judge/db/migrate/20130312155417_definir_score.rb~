@@ -1,0 +1,14 @@
+class DefinirScore < ActiveRecord::Migration
+  def up
+    create_table :scores do |t|
+	   t.integer :rank 	
+	   t.integer :total	 	
+      t.timestamps
+    end
+	add_index :score, :exercise
+  end
+
+  def down
+	drop_table :scores
+  end
+end

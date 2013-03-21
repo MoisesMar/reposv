@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+
+<p> <%= @score.total %> </p>
+Welcome <%= @user.name%>
+<%= link_to 'Edit', edit_score_path(@score) %> |
+<%= link_to 'Back', scores_path %>
