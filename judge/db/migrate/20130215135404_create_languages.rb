@@ -5,7 +5,6 @@ class CreateLanguages < ActiveRecord::Migration
       t.string :ltype
       t.string :compilation
       t.string :execution
-
       t.timestamps
     end
   end

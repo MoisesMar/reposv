@@ -1,10 +1,10 @@
-require 'digest'
+  require 'digest'
 class User < ActiveRecord::Base
   attr_accessible :code, :email, :encrypted_password, :name
   attr_accessor :password
   
   before_save :encrypt_new_password
-  has_many :submissions ,  :dependent => :destroy
+  has_many :submission ,  :dependent => :destroy
 
   has_and_belongs_to_many :roles
   validates :password, {:confirmation => true, :length=>{:within => 6..50},

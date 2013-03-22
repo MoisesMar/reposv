@@ -2,15 +2,33 @@ class ScoresController < ApplicationController
   # GET /scores
   # GET /scores.json
   def index
-#    @exercise = Exercise.find(params[:id])
-    @exercise = Exercise.find(2)
-    @problems = @exercise.exercise_problems.order(:problem_number)
+
+    
+#    @problems = @exercise.exercise_problems.order(:problem_number)
+    
+    @submission = Submission.all
+
+    @ex = ExerciseProblem.all
+
+    @scores = Score.all
+    @numUsuarios = User.all.length
+#    @val = [1,2,3,4,5]
+#    @val = nm
+    @val2 = {:a=>"uno",:b=>"dos"}
+#    *******************************************
+
     @users = User.all
+    @subs = []
+    @users.each do |x|
+#       exPro = x.submission.exercise_problem
+       @subs << x.submission
+    end
+
+    nm = 2
+    @Maraton = Exercise.find(nm)
     
 
 
-    @scores = Score.all
-#    @val = Score.find(2).suma(3)
     
     respond_to do |format|
       format.html # index.html.erb
@@ -22,6 +40,9 @@ class ScoresController < ApplicationController
   # GET /scores/1.json
   def show
     @score = Score.find(params[:id])
+    @user = User.find(2)
+
+#    render :action => index
 
     respond_to do |format|
       format.html # show.html.erb

@@ -17,28 +17,36 @@
 <% end %>
 </table>
 
+Users
+<table border="1">
+<%# @users.each do |u| %>
+<% u=@users %>
+  <tr>
+    <td> <%= u.email %> </td>
+    <td> <%= u.name %> </td>
+    <td> <%= u.code %> </td>
+    <td> <%= u.id  %> </td>
+  </tr>
+<%#end%>
+</table>
 
 <br/>
 
 
 
-
-<%a=1; @subs.each do |subsi| %>
-Submission Usuer:<%=a%>
+Submission
 <table border="1">
   <tr>
     <td> Num</td>
     <td> id</td>
-    <td> exercise_problem_id</td>
     <td> User id</td>
     <td> testcase_id</td>
     <td> veredict</td>
     <td> exercise_problem_id</td>
   </tr>
-<% i=1;  subsi.each do |u| %>
+<% i=1;  @submission.each do |u| %>
   <tr>
     <td> <%= i %></td>
-    <td> <%= u.id %></td>
     <td> <%= u.exercise_problem_id %> </td>
     <td> <%= u.user_id %> </td>
     <td> <%= u.testcase_id %> </td>
@@ -48,8 +56,7 @@ Submission Usuer:<%=a%>
 <% i=i+1; end%>
 </table>
 <br/><br/>
-<%a=a+1; end%>
-<br/>
+
 Exercise_Problems
 <table border="1">
   <tr>
@@ -71,30 +78,15 @@ Exercise_Problems
   </tr>
 <%end%>
 </table>
+<br/>
 
 
 
-<%#*Maraton%>
-<br/><br/>
-Maraton (Problemas)
-<table border="1">
-  <tr>
-    <td> ID </td>
-    <td> Nombre  </td>
-    <td> Inicio    </td>
-    <td> Fin  </td>
-  </tr>
-<%u=@Maraton %>
-  <tr>
-    <td> <%= u.id %> </td>
-    <td> <%= u.name %> </td>
-    <td> <%= u.from_date   %> </td>
-    <td> <%= u.to_date %> </td>
-  </tr>
-<%#end%>
-</table>
 
-
-
+<br/>
+Val
+  <h5><%= @val %></h5>
+  <h5>Numero de usuarios: <%= @numUsuarios %></h5>
+<br />
 
 <%= link_to 'New Score', new_score_path %>

@@ -4,6 +4,7 @@ class CreateSubmissions < ActiveRecord::Migration
       t.references :exercise_problem
       t.references :user
       t.references :testcase
+	  t.references :score
       t.datetime :init_date
       t.datetime :end_date
       t.string :veredict
@@ -16,5 +17,6 @@ class CreateSubmissions < ActiveRecord::Migration
     add_index :submissions, :exercise_problem_id
     add_index :submissions, :user_id
     add_index :submissions, :testcase_id
+	add_index :submissions, :score_id
   end
 end

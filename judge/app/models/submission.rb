@@ -2,6 +2,7 @@ class Submission < ActiveRecord::Base
   belongs_to :exercise_problem
   belongs_to :user
   belongs_to :testcase
+  belongs_to :score
 
   attr_accessible :end_date, :init_date, :time, :srcfile, :outfile, :infile
   attr_accessor :language_id

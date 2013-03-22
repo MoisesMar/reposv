@@ -4,8 +4,8 @@ class Score < ActiveRecord::Base
    
    attr_accessible :rank, :total
 
-   def suma(n)
-     return n+10
-   end
+#   def suma(n)
+#     return n+10
+#   end
 
 end

@@ -1,4 +1,7 @@
 Judge::Application.routes.draw do
+  resources :scores
+
+
   resources :languages
 
 
