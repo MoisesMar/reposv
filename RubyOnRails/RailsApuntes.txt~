@@ -39,12 +39,6 @@ $ rails generate scaffold Post name:string title:string content:text
 	$ rake db:rollback
 
 	$ rake db:migrate VERSION=0 // ir al inicio de la migracion
-	
-	
-***********************************
-Ver las rutas del proyecto rails 
-
-    $ rake routes
 
 
 
