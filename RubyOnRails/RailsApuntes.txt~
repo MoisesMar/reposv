@@ -40,11 +40,6 @@ $ rails generate scaffold Post name:string title:string content:text
 
 	$ rake db:migrate VERSION=0 // ir al inicio de la migracion
 
-***********************************
-source /etc/profile
-
-Configurar ruby para todos los usuarios linux
-
 
 
 
