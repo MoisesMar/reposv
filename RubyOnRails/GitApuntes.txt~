@@ -28,6 +28,6 @@ git diff --cached   // Permite ver las modificaciones pero que han sido agregado
 git diff --staged   // Igual al comando anterior 
 git commit -a  // Hace las dos cosas: agregar y hacer el commit
 git rm // Para agregar archivos que van hacer eliminados en el prox commit
-git mv nameFile // Es practicamente renombrar el archivo
-git log // Permite ver todo el historial de commits hechos en el proyecto 
+
+
 
