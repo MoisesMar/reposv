@@ -35,8 +35,8 @@ typedef vector<pii> vpii;
 bool isPrime(int n){
     int raiz = ceil(sqrt(n));
     if(n==1) return false;
-    if(n%2==0) return false;
-    if(n%3==0) return false;
+    if(n%2==0 and n!=2) return false;
+    if(n%3==0 and n!=3) return false;
     Forn(i,5,n,2){
         if((n%i)==0) return false;
     }
@@ -44,17 +44,26 @@ bool isPrime(int n){
 }
 
 int main(){
-//    int n,k;
-//    while(cin>>n>>k){
-//        
-//    }
-    
-    string rivar="rivas";
-    D(rivar);
-    
-    For(i,50){
-        if(isPrime(i)) cout<<i<<":"<<"si"<<endl;
-        else cout<<i<<":"<<"no"<<endl;
+    int primes[200]={0};
+    int indVec = 0;
+//    freopen("nold.in","r",stdin);    
+    For(i,1000){
+        if(isPrime(i)){
+            primes[indVec] = i;
+            indVec++;
+        }
     }
-    cout<<isPrime(45)<<endl;
+    
+    int n,k;
+    while(cin>>n>>k){
+        int nold=0;
+        int sum=0;
+        For(i,200){
+            sum = primes[i]+primes[i+1]+1;
+            if(sum>n || k==0) break;
+            if(isPrime(sum)) nold++;
+        }
+        if(nold==k) cout<<"YES"<<endl;
+        else cout<<"NO"<<endl;
+    }
 }

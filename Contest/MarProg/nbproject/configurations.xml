@@ -9,6 +9,7 @@
                    displayName="Resource Files"
                    projectFiles="true">
       <itemPath>Noldbach.cpp</itemPath>
+      <itemPath>nold.in.js</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -41,6 +42,8 @@
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="nold.in.js" ex="false" tool="3" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -65,6 +68,8 @@
       <item path="Noldbach.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="nold.in.js" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>
