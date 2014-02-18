@@ -34,3 +34,5 @@ git log // Permite ver todo el historial de commits hechos en el proyecto
 git log -p -n //Permite ver el log de los commits, junto con las diferencias en cada commit a traves de -p y con -n permite determinar los primero n commits que se quieren ver
 git log --stat //Permite visualizar las estadisticas
 git log --pretty=[online,short,full,fuller]
+git log --pretty=format:"%h %s" --graph // la opcion --graph permite ver un pequeño grafico de la historia del proyect
+git log --pretty=format:"%h %s" --graph // la opcion --graph permite ver un pequeño grafico de la historia del proyecto
