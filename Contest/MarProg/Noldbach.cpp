@@ -31,7 +31,7 @@ typedef vector<string> vs;
 typedef pair<int,int> pii;
 typedef vector<pii> vpii;
 
-
+//funcion para calcular numeros primos
 bool isPrime(int n){
     int raiz = ceil(sqrt(n));
     if(n==1) return false;
