@@ -1,4 +1,6 @@
-﻿Apuntes comandos Unix
+﻿//New Line
+
+Apuntes comandos Unix
 
 rm -rf // rm es para eliminar archivos, la bandera -rf es para eliminar todos los archivos recursivamente dentro de un dir
 
