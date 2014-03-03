@@ -9,6 +9,7 @@
                    displayName="Resource Files"
                    projectFiles="true">
       <itemPath>Noldbach.cpp</itemPath>
+      <itemPath>Reconnaissance.cpp</itemPath>
       <itemPath>nold.in.js</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
@@ -40,6 +41,8 @@
       </compileType>
       <item path="Noldbach.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="Reconnaissance.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="nold.in.js" ex="false" tool="3" flavor2="0">
@@ -66,6 +69,8 @@
         </asmTool>
       </compileType>
       <item path="Noldbach.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Reconnaissance.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
