@@ -8,9 +8,12 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>GeorgeRound.cpp</itemPath>
       <itemPath>Noldbach.cpp</itemPath>
       <itemPath>Reconnaissance.cpp</itemPath>
+      <itemPath>UltraFastMath.cpp</itemPath>
       <itemPath>nold.in.js</itemPath>
+      <itemPath>towers.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -39,13 +42,19 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="GeorgeRound.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="Noldbach.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Reconnaissance.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="UltraFastMath.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="nold.in.js" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="towers.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -68,13 +77,19 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="GeorgeRound.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="Noldbach.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Reconnaissance.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="UltraFastMath.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="nold.in.js" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="towers.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
