@@ -39,7 +39,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/Noldbach.o \
 	${OBJECTDIR}/Reconnaissance.o \
 	${OBJECTDIR}/UltraFastMath.o \
+	${OBJECTDIR}/VarelaAndPlates.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/nbproject/Games.o \
 	${OBJECTDIR}/towers.o
 
 
@@ -87,10 +89,20 @@ ${OBJECTDIR}/UltraFastMath.o: UltraFastMath.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/UltraFastMath.o UltraFastMath.cpp
 
+${OBJECTDIR}/VarelaAndPlates.o: VarelaAndPlates.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/VarelaAndPlates.o VarelaAndPlates.cpp
+
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/nbproject/Games.o: nbproject/Games.cpp 
+	${MKDIR} -p ${OBJECTDIR}/nbproject
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/nbproject/Games.o nbproject/Games.cpp
 
 ${OBJECTDIR}/towers.o: towers.cpp 
 	${MKDIR} -p ${OBJECTDIR}

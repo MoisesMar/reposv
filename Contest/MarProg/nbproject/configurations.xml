@@ -8,10 +8,12 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>nbproject/Games.cpp</itemPath>
       <itemPath>GeorgeRound.cpp</itemPath>
       <itemPath>Noldbach.cpp</itemPath>
       <itemPath>Reconnaissance.cpp</itemPath>
       <itemPath>UltraFastMath.cpp</itemPath>
+      <itemPath>VarelaAndPlates.cpp</itemPath>
       <itemPath>nold.in.js</itemPath>
       <itemPath>towers.cpp</itemPath>
     </logicalFolder>
@@ -50,7 +52,11 @@
       </item>
       <item path="UltraFastMath.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="VarelaAndPlates.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="nbproject/Games.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="nold.in.js" ex="false" tool="3" flavor2="0">
       </item>
@@ -85,7 +91,11 @@
       </item>
       <item path="UltraFastMath.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="VarelaAndPlates.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="nbproject/Games.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="nold.in.js" ex="false" tool="3" flavor2="0">
       </item>
