@@ -47,4 +47,12 @@ git remote rm name_repository // Elimina un repo remoto
 //*** Etiquetas
 git tag //Permite listar todas las etiquetas que hay en el proyecto
 git tag -a v1.4 -m 'my version 1.4' // Se crea una etiqueta anotada y con un msj
- 
+git tag -s v1.5 -m 'messagge' //Se crea un etiqueta(usa llaves publicas y privadas) 
+git tag -v //Verifica etiquetas firmadas
+git push origin [tagname] //Es necesario enviar la etiqueta al servidor remoto
+
+
+
+
+
+
