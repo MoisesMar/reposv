@@ -31,24 +31,26 @@ int main(){
   #ifdef SV
     freopen("in","r",stdin);
   #endif
-  int n;
-  int home[30],guest[30];
-  while(cin>>n){
+    int n,m,k;
+  
+  while(cin>>n>>m>>k){
+      int num,plato1,plato2;
+      int cant1=0,cant2=0;
       For(i,n){
-          cin>>home[i];
-          cin>>guest[i];
+          cin>>num;
+          if(num==1) cant1++;
+          else  cant2++;
       }
-      int matches=0;
-      For(i,n){
-          For(j,n){
-              if(i!=j){
-                 if(home[i]==guest[j]) matches++; 
-              }
-          }
+      if(cant1-m > 0)
+        plato1 = cant1-m;
+      else{
+          plato1=0;
+          k += m-cant1;
       }
+      if(cant2-k>0) plato2 = cant2-k;
+      else plato2=0;
       
-      cout<<matches<<endl;
+      cout<<plato1+plato2<<endl;
   }
   return 0;
 }
-

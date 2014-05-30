@@ -26,29 +26,38 @@ using namespace std;
 
 
 
-
 int main(){
-  #ifdef SV
+#ifdef SV
     freopen("in","r",stdin);
-  #endif
-  int n;
-  int home[30],guest[30];
-  while(cin>>n){
+#endif
+    int n;
+    int xs[200],ys[200];
+    while(cin>>n){
+      int num;
+      For(i,n) cin>>xs[i]>>ys[i];
+      
+      int scoples=0;
       For(i,n){
-          cin>>home[i];
-          cin>>guest[i];
-      }
-      int matches=0;
-      For(i,n){
+          bool lower=false,upper=false,right=false,left=false;
           For(j,n){
               if(i!=j){
-                 if(home[i]==guest[j]) matches++; 
+                  if(xs[i]==xs[j]){
+                      if(ys[j]<ys[i]) lower = true;
+                      if(ys[j]>ys[i]) upper = true;
+                  }
+                  if(ys[i]==ys[j]){
+                      if(xs[j]<xs[i]) left = true;
+                      if(xs[j]>xs[i]) right = true;
+                  }
+                  
               }
           }
+          if(lower and upper and left and right) scoples++;
       }
-      
-      cout<<matches<<endl;
-  }
+      cout<<scoples<<endl;
+    }
   return 0;
+  
 }
+  
 

@@ -17,8 +17,6 @@ int main(){
     int squares[50];
     int n,k;
 //    freopen("in","r",stdin);
-    cout<<"Hola mundo"<<endl;
-    
     while(cin>>n>>k){
         For(i,n)cin>>squares[i];
         qsort(squares,n,sizeof(int),compare);

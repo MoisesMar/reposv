@@ -1,3 +1,4 @@
+
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
@@ -24,31 +25,19 @@ using namespace std;
 #define pb push_back
 #define mp make_pair
 
-
+int compare (const void* a, const void* b){
+    return (*(int*)b-*(int*)a);
+}
 
 
 int main(){
   #ifdef SV
     freopen("in","r",stdin);
   #endif
-  int n;
-  int home[30],guest[30];
-  while(cin>>n){
-      For(i,n){
-          cin>>home[i];
-          cin>>guest[i];
-      }
-      int matches=0;
-      For(i,n){
-          For(j,n){
-              if(i!=j){
-                 if(home[i]==guest[j]) matches++; 
-              }
-          }
-      }
-      
-      cout<<matches<<endl;
-  }
+  
+  int n,m,k;
+  cin>>n,m,k;
+    
   return 0;
 }
 

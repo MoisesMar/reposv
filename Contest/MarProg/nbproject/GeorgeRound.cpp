@@ -25,30 +25,26 @@ using namespace std;
 #define mp make_pair
 
 
-
-
 int main(){
-  #ifdef SV
+    int vn[3000]={0};
+    int vm[3000]={0};
+    int n,m;
+#ifdef HOME
     freopen("in","r",stdin);
-  #endif
-  int n;
-  int home[30],guest[30];
-  while(cin>>n){
-      For(i,n){
-          cin>>home[i];
-          cin>>guest[i];
-      }
-      int matches=0;
-      For(i,n){
-          For(j,n){
-              if(i!=j){
-                 if(home[i]==guest[j]) matches++; 
-              }
-          }
-      }
-      
-      cout<<matches<<endl;
-  }
-  return 0;
+#endif
+    while(cin>>n>>m){
+        For(i,n) cin>>vn[i];
+        For(i,m) cin>>vm[i];
+        int ivn = 0;
+        For(i,m){
+            if(ivn==n) break;
+            if(vm[i]>=vn[ivn]){
+                ivn++;
+            }
+        }
+        cout<<n-ivn<<endl;
+    }
+    
+    
 }
 

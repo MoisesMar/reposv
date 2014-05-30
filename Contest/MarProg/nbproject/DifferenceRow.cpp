@@ -25,30 +25,31 @@ using namespace std;
 #define mp make_pair
 
 
+#define vi vector<int>
 
-
+bool compare(int a, int b){return (a<b);}
 int main(){
   #ifdef SV
     freopen("in","r",stdin);
   #endif
-  int n;
-  int home[30],guest[30];
+  int n,m;
+  vi number;
   while(cin>>n){
       For(i,n){
-          cin>>home[i];
-          cin>>guest[i];
+          cin>>m;
+          number.pb(m);
       }
-      int matches=0;
-      For(i,n){
-          For(j,n){
-              if(i!=j){
-                 if(home[i]==guest[j]) matches++; 
-              }
-          }
+      sort(number.begin(),number.end(),compare);
+      int first = number[0];
+      number[0]=number[n-1];
+      number[n-1]=first;
+      For(i,number.size()){
+          cout<<number[i]<<" ";
       }
-      
-      cout<<matches<<endl;
+      cout<<endl;
+      number.clear();
   }
   return 0;
 }
+
 

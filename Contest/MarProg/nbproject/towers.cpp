@@ -24,31 +24,35 @@ using namespace std;
 #define pb push_back
 #define mp make_pair
 
+//typedef long long int lld;
+typedef vector<int> vi;
+//typedef vector<lld> vlld;
+typedef vector<string> vs;
+typedef pair<int,int> pii;
+typedef vector<pii> vpii;
 
+typedef map<int,int> mii;
 
 
 int main(){
-  #ifdef SV
-    freopen("in","r",stdin);
-  #endif
+  mii mymap;
   int n;
-  int home[30],guest[30];
+#ifdef HOME
+    freopen("in","r",stdin);
+#endif
   while(cin>>n){
+      int num;
       For(i,n){
-          cin>>home[i];
-          cin>>guest[i];
+          cin>>num;
+          mymap[num]+=1;
       }
-      int matches=0;
-      For(i,n){
-          For(j,n){
-              if(i!=j){
-                 if(home[i]==guest[j]) matches++; 
-              }
-          }
-      }
+      int may = 0;
+      for (mii::iterator it=mymap.begin(); it!=mymap.end(); ++it)
+          if((it->second) > may) may = it->second;
       
-      cout<<matches<<endl;
+      cout<<may<<" "<<mymap.size()<<endl;
+      mymap.clear();
+      
   }
   return 0;
 }
-

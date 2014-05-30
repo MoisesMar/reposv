@@ -5,9 +5,12 @@
                    displayName="Header Files"
                    projectFiles="true">
     </logicalFolder>
-    <logicalFolder name="ResourceFiles"
-                   displayName="Resource Files"
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
                    projectFiles="true">
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles" displayName="Sources" projectFiles="true">
       <itemPath>nbproject/Games.cpp</itemPath>
       <itemPath>GeorgeRound.cpp</itemPath>
       <itemPath>Noldbach.cpp</itemPath>
@@ -16,11 +19,6 @@
       <itemPath>VarelaAndPlates.cpp</itemPath>
       <itemPath>nold.in.js</itemPath>
       <itemPath>towers.cpp</itemPath>
-    </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
-      <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"

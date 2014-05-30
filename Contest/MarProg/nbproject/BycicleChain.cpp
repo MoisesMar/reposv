@@ -1,3 +1,4 @@
+
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
@@ -31,23 +32,31 @@ int main(){
   #ifdef SV
     freopen("in","r",stdin);
   #endif
-  int n;
-  int home[30],guest[30];
+  int n,m;
+  int pn[50],pm[50];
   while(cin>>n){
+      For(i,n)cin>>pn[i];
+      cin>>m;
+      For(j,m)cin>>pm[j];
+      
+      int ratioMayor=0;
+      int sumRatios =0;
+      int div=0;
       For(i,n){
-          cin>>home[i];
-          cin>>guest[i];
-      }
-      int matches=0;
-      For(i,n){
-          For(j,n){
-              if(i!=j){
-                 if(home[i]==guest[j]) matches++; 
+          For(j,m){
+              if(pm[j]%pn[i]==0){
+                  div=pm[j]/pn[i];
+                  if(div>ratioMayor){
+                      ratioMayor=div;
+                      sumRatios=1;
+                      continue;
+                  }
+                  if(div==ratioMayor) sumRatios++;
               }
           }
       }
       
-      cout<<matches<<endl;
+      cout <<sumRatios<<endl;
   }
   return 0;
 }
