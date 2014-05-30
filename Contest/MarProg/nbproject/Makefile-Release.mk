@@ -71,43 +71,43 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/marprog: ${OBJECTFILES}
 
 ${OBJECTDIR}/GeorgeRound.o: GeorgeRound.cpp 
 	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/GeorgeRound.o GeorgeRound.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/GeorgeRound.o GeorgeRound.cpp
 
 ${OBJECTDIR}/Noldbach.o: Noldbach.cpp 
 	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/Noldbach.o Noldbach.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Noldbach.o Noldbach.cpp
 
 ${OBJECTDIR}/Reconnaissance.o: Reconnaissance.cpp 
 	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/Reconnaissance.o Reconnaissance.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Reconnaissance.o Reconnaissance.cpp
 
 ${OBJECTDIR}/UltraFastMath.o: UltraFastMath.cpp 
 	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/UltraFastMath.o UltraFastMath.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/UltraFastMath.o UltraFastMath.cpp
 
 ${OBJECTDIR}/VarelaAndPlates.o: VarelaAndPlates.cpp 
 	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/VarelaAndPlates.o VarelaAndPlates.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/VarelaAndPlates.o VarelaAndPlates.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 ${OBJECTDIR}/nbproject/Games.o: nbproject/Games.cpp 
 	${MKDIR} -p ${OBJECTDIR}/nbproject
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/nbproject/Games.o nbproject/Games.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/nbproject/Games.o nbproject/Games.cpp
 
 ${OBJECTDIR}/towers.o: towers.cpp 
 	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/towers.o towers.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/towers.o towers.cpp
 
 # Subprojects
 .build-subprojects:
