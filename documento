@@ -1,6 +1,12 @@
 Commits:
 
 commit: creacion de archivo () en master
+<<<<<<< HEAD
 Change: Cambio realizado en branch dev1
 master: commit en master paralelo a dev2
 
+=======
+dev1: Cambio realizado en branch dev1
+dev2: delete dev1
+dev2: create new branch dev2
+>>>>>>> dev2
