@@ -7,4 +7,9 @@ master: commit en master paralelo a dev2
 dev1: Cambio realizado en branch dev1
 dev2: delete dev1
 dev2: create new branch dev2
+<<<<<<< HEAD
 
+=======
+dev2: Cambio para intentar eliminar rama
+dev2: Otro cambio
+>>>>>>> dev2

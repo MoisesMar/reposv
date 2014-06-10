@@ -55,6 +55,13 @@ git push origin [tagname] //Es necesario enviar la etiqueta al servidor remoto
 //*** RAMAS
 git checkout nameRama // Cambia a la rama nombrada como nameRama
 git checkout -b nameRama //Este comando es un pequeño atajo a los dos anteriores, ya que crea y cambia de rama
+git merge nameRama // combina los cambios del branch actual con el indicado en nameRama
+git rebase nameRama // (reorganizacion-rebase)se reorganiza el apuntador de la rama actual con el proposito de hacer un avance rápido (fast-forward merge)
+
+
+
+
+
 
 
 
